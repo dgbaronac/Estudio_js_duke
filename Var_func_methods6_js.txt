@@ -1,0 +1,19 @@
+function printPixel(nameImage, xpos, ypos) {
+    var fgIm = new SimpleImage(nameImage);
+    var x = fgIm.getRed(xpos,ypos);
+    var y = fgIm.getGreen(xpos,ypos);
+    var z = fgIm.getBlue(xpos,ypos);
+    
+    var r = "red is " + x;
+    var g = "green is " + y;
+    var b = "blue is " + z;
+    
+    print(r);
+    print(g);
+    print(b);
+    
+}
+
+printPixel("drewgreen.png",10, 10);
+printPixel("drewgreen.png",250, 500);
+

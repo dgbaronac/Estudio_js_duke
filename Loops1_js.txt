@@ -1,0 +1,8 @@
+var img = new SimpleImage(200, 200);
+print(img);
+
+for(var pixel of img.values()){
+    var newY = pixel.setGreen(255)
+    var newX = pixel.setRed(255)
+}
+print(img);

@@ -1,0 +1,16 @@
+
+
+function sumPixel(nameOfImage, xpos, ypos) {
+    var fgIm = new SimpleImage(nameOfImage);
+    var x = fgIm.getRed(xpos,ypos);
+    var y = fgIm.getGreen(xpos,ypos);
+    var z = fgIm.getBlue(xpos,ypos);
+    
+    var total = x + y + z;
+    return total;
+}
+
+var answer = sumPixel("drewgreen.png", 250, 500);
+print(answer);
+answer = sumPixel("drewgreen.png",10, 10);
+print(answer);

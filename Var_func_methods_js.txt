@@ -1,0 +1,35 @@
+
+//var x = 3;
+//var y = 4;
+//var z = x + 2*y;
+
+//print(x);
+//print(y);
+//print(z);
+
+var x = 3;
+var y = 2;
+y = x;
+print (x);
+print (y);
+
+var image = new SimpleImage("eastereggs.jpg");
+print (image);
+
+var w = image.getWidth();
+var v = image.getHeight();
+var z = image.getPixel(w-10,v-20);//color del pixel en la ubicacion indicada
+
+print (w);
+print (v);
+print (z);
+
+function square(x){
+	var ans = x*x;
+	return ans;
+}
+y = square(8);
+print("square: "+ y);
+
+var t = x + y + 9;
+print("add: "+ t);
